@@ -10,7 +10,7 @@ body{
 }
 
 .container-fluid{
-    padding: 3% 15%;
+    padding: 3% 15% 7%;
 }
 
 h1{
@@ -63,17 +63,23 @@ p{
     margin: 5% 3% 5% 0;
 }
 
-/*Title Image*/
-
-.title-image{
-    width: 60%;
-    transform: rotate(25deg);
+.title-image-div {
+    position: relative;
 }
-
-/*Features Section*/
-
-#features{
+ 
+/* Title Image */
+.title-image {
+    width: 25%;
+    transform: rotate(25deg);
+    position: absolute;
+    right: 25%;
+}
+ 
+/* Features Section */
+#features {
     padding: 7% 15%;
+    background-color: #fff;
+    position: relative;
 }
 
 .feature-box{
@@ -118,4 +124,30 @@ p{
 .press-logo{
     width: 15%;
     margin: 20px 20px 50px;
+}
+
+/*Pricing Section*/
+
+#pricing{
+    padding: 100px;
+    text-align: center;
+}
+
+.pricing-column{
+    padding: 3% 2%;
+}
+
+@media (max-width: 1028px){
+    #title{
+        text-align: center;
+    }
+
+    .media-iphone{
+        margin-bottom: 14rem;
+    }
+    
+    .title-image {
+        position: static;
+        transform: rotate(0);
+    }
 }
